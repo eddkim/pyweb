@@ -18,9 +18,9 @@ class AnswerForm(forms.ModelForm):
         fields = ['content']
         labels = {'content':'내용'}
 
-#댓글 등록 폼
-class CommentForm(forms.ModelForm):
+# 댓글 등록 폼
+class CommentForm(forms.ModelForm):  #모델폼에서 상속받음
     class Meta:
         model = Comment
         fields = ['content']
-        labels = {'content':'댓글 내용'}
+        labels = {'content': '댓글 내용'}
